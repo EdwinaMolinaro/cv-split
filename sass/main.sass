@@ -1,0 +1,121 @@
+body
+  background-image: url("")
+  background-size: cover
+  background-attachment: fixed
+  margin: 0
+  padding: 0
+
+.blockg
+  background-color: #222
+  height: 100vh
+  h2
+    font-family: 'Amatic SC', cursive
+    font-size: 100px
+    animation-name: rotate
+    animation-duration: 2s
+    animation-iteration-count: infinite
+    &:hover
+      cursor: pointer
+
+.centered
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(10%, -50%)
+
+@keyframes rotate
+  from, 5%
+    color: #333333
+  10%
+    color: lightgreen
+  15%
+    color: #eeeeee
+  20%, 25%
+    color: pink
+  30%, 35%
+    color: orange
+  40%, 45%
+    color: gold
+  50%, 55%
+    color: blue
+  60%, 65%
+    color: cyan
+  70%, 65%
+    color: indigo
+  80%,85%
+    color: yellow
+  90%,95%
+    color: red
+
+.blockd
+  background-size: cover
+  font-family: 'Amatic SC', cursive
+  background-image: url("https://cdn.pixabay.com/photo/2015/06/08/15/11/objects-801922_960_720.jpg")
+  cursor: pointer
+  background-position: center
+
+
+
+.row
+  display: flex
+  flex-wrap: wrap
+
+.row >[class*='col-']
+  display: flex
+  flex-direction: column
+  img
+    width: 100px
+    align-self: center
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    animation-name: move
+    animation-duration: 2s
+    animation-iteration-count: infinite
+
+@keyframes move
+  from, to
+    transform: translate(-50%, -50%)
+  50%
+    transform: translate(-50%, -15%) rotateY(180DEG)
+
+.no-padding
+  padding-left: 0
+  padding-right: 0
+
+nav
+  background-color: #E6E6DC
+  height: 90px
+  ul
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    padding-top: 20px
+    li
+      list-style: none
+      transition: all 0.5s
+      font-size: 40px
+      color: #222
+      font-family: 'Amatic SC', cursive
+      cursor: pointer
+      &:hover
+        transform: rotate(10deg)
+
+.about
+  h3
+    text-align: center
+    font-size: 60px
+    padding-top: 100px
+    color: #222
+    display: inline-block
+    align-self: center
+    border-bottom: solid 1px #222
+    padding-bottom: 50px
+    font-family: 'Amatic SC', cursive
+  p
+    font-size: 20px
+    font-family: 'Roboto', sans-serif
+    padding-left: 150px
+    padding-right: 150px
+    padding-top: 50px
